@@ -1,8 +1,6 @@
 const reviewTabs = document.querySelectorAll(".review-tab");
 const reviewPanels = document.querySelectorAll(".review-panel");
 const themeToggle = document.querySelector(".theme-toggle");
-const commentsToggle = document.querySelector(".collapse-comments");
-const commentList = document.querySelector(".comment-list");
 
 reviewTabs.forEach((tab) => {
   tab.addEventListener("click", () => {
@@ -24,11 +22,4 @@ reviewTabs.forEach((tab) => {
 
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
-});
-
-commentsToggle.addEventListener("click", () => {
-  const shouldHide = commentsToggle.getAttribute("aria-expanded") === "true";
-  commentList.hidden = shouldHide;
-  commentsToggle.setAttribute("aria-expanded", String(!shouldHide));
-  commentsToggle.textContent = shouldHide ? "Show Comments" : "Hide Comments";
 });

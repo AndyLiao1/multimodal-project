@@ -102,8 +102,7 @@ a {
 }
 
 .section-nav a,
-.theme-toggle,
-.collapse-comments {
+.theme-toggle {
   border: 1px solid var(--line);
   background: transparent;
   color: var(--ink);
@@ -115,8 +114,7 @@ a {
 }
 
 .section-nav a:hover,
-.theme-toggle:hover,
-.collapse-comments:hover {
+.theme-toggle:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
@@ -345,10 +343,6 @@ dd {
   padding-top: 1rem;
 }
 
-.comment-list[hidden] {
-  display: none;
-}
-
 .comment {
   min-height: 150px;
   padding: 0.9rem;
@@ -406,8 +400,7 @@ dd {
   }
 
   .section-nav a,
-  .theme-toggle,
-  .collapse-comments {
+  .theme-toggle {
     flex: 1 1 auto;
     text-align: center;
   }
