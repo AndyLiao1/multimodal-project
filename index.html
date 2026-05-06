@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-Star Legacy | Shady Palms Gazette</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-strip">
+        <span>Shady Palms, IL</span>
+        <span>Sunday Edition</span>
+        <span>Local Eats &amp; Crime Desk</span>
+      </div>
+      <div class="masthead">
+        <p class="kicker">Shady Palms Gazette</p>
+        <h1>One-Star Legacy</h1>
+        <p class="tagline">Independent reporting on neighborhood stories, family kitchens, and small-town mysteries.</p>
+      </div>
+      <nav class="section-nav" aria-label="News sections">
+        <a href="#article">Article</a>
+        <a href="#reviews">Review Archive</a>
+        <a href="#comments">Community Comments</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme">Theme</button>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <article class="story" id="article">
+        <p class="desk-label">Local Eats &amp; Crime Desk</p>
+        <h2>Restaurant Reviewer Dies After Confrontation at Local Filipino Restaurant</h2>
+        <p class="subheadline">
+          Police investigate after Derek Winter collapses at Tita Rosie’s Kitchen, a struggling family restaurant he had repeatedly criticized online.
+        </p>
+
+        <div class="byline-row">
+          <div>
+            <p class="byline">By <strong>Andy Liao</strong>, Staff Reporter</p>
+            <p class="date">Published: May 6, 2026</p>
+          </div>
+          <p class="read-time">6 min read</p>
+        </div>
+
+        <section class="article-section">
+          <h3>What Happened</h3>
+          <ul class="placeholder-list">
+            <li>Derek Winter, a local newspaper food critic and blogger known for harsh reviews, died after collapsing at Tita Rosie’s Kitchen.</li>
+            <li>The incident took place inside the family-run Filipino restaurant operated by Rosie “Tita Rosie” Macapagal, Lola Flor, and Lila Macapagal.</li>
+            <li>Winter arrived with Edwin Long, the shopping plaza landlord and Winter’s stepfather, who had come to inspect the restaurant because it was behind on rent.</li>
+            <li>Witnesses said Winter insulted the restaurant, criticized Filipino food, and argued with Lila shortly before becoming visibly ill.</li>
+            <li>Several regulars, including older Filipino women known locally as the “Calendar Crew,” watched as Winter convulsed and collapsed face-first into a dessert bowl.</li>
+          </ul>
+        </section>
+
+        <section class="article-section">
+          <h3>Police Investigation</h3>
+          <p>
+            Police have opened an investigation into Winter’s death after he was taken from the restaurant alive but unconscious and later died at the hospital. Officials have not publicly released a final cause, though the case is being treated as suspicious after Long accused the restaurant of killing his stepson.
+          </p>
+          <p>
+            Lila Macapagal, 25, has drawn police attention because she works at the restaurant, argued with Winter before his collapse, and shares a complicated history with him as a former boyfriend. Police have not announced a formal conclusion, and community members remain divided over how much suspicion should fall on her.
+          </p>
+          <p>
+            Witnesses also noted that Winter appeared unwell during the meal. Several people described him as sweaty, pale, shaky, thirsty, and erratic; Long reportedly asked him whether he had taken his insulin before the collapse.
+          </p>
+        </section>
+
+        <aside class="review-sidebar" id="reviews" aria-labelledby="review-title">
+          <div class="sidebar-header">
+            <p class="archive-label">Embedded Archive</p>
+            <h3 id="review-title">Derek Winter’s Previous Reviews</h3>
+          </div>
+
+          <div class="review-tabs" role="tablist" aria-label="Derek Winter review archive">
+            <button class="review-tab is-active" type="button" data-review="review-one" role="tab" aria-selected="true">
+              3 Weeks Ago
+            </button>
+            <button class="review-tab" type="button" data-review="review-two" role="tab" aria-selected="false">
+              2 Weeks Ago
+            </button>
+            <button class="review-tab" type="button" data-review="review-three" role="tab" aria-selected="false">
+              4 Days Ago
+            </button>
+          </div>
+
+          <div class="review-panel is-active" id="review-one" role="tabpanel">
+            <p class="stars" aria-label="one out of five stars">★☆☆☆☆</p>
+            <blockquote>
+              “The adobo arrives wrapped in nostalgia, which is convenient because nostalgia is doing most of the work. The room treats family recipes like a shield against criticism.”
+            </blockquote>
+            <p class="review-meta">—Derek Winter, 3 weeks before his death</p>
+          </div>
+
+          <div class="review-panel" id="review-two" role="tabpanel" hidden>
+            <p class="stars" aria-label="one out of five stars">★☆☆☆☆</p>
+            <blockquote>
+              “Tita Rosie’s Kitchen has confused family sentiment with culinary achievement. Every plate asks diners to admire tradition before flavor, and Shady Palms keeps falling for it.”
+            </blockquote>
+            <p class="review-meta">—Derek Winter, 2 weeks before his death</p>
+          </div>
+
+          <div class="review-panel" id="review-three" role="tabpanel" hidden>
+            <p class="stars" aria-label="one out of five stars">★☆☆☆☆</p>
+            <blockquote>
+              “This restaurant survives because Shady Palms mistakes loyalty for quality. Maybe Lila Macapagal should fix the food before defending a kitchen that cannot even pay its rent.”
+            </blockquote>
+            <p class="review-meta">—Derek Winter, 4 days before his death</p>
+          </div>
+        </aside>
+
+        <section class="article-section">
+          <h3>Longstanding Tension</h3>
+          <p>
+            Winter’s reviews had long been a source of tension between him and the Macapagal family.
+            His posts repeatedly framed the restaurant’s popularity as a matter of neighborhood loyalty rather than merit, a criticism that many regulars saw as insulting to both the food and the family behind it.
+          </p>
+          <p>
+            The conflict was also personal. Winter was Lila’s ex-boyfriend and first love, and his public criticism landed at a vulnerable time: Lila had recently returned from Chicago after a broken engagement and a failed café dream, hoping to help save the family restaurant.
+          </p>
+          <p>
+            For a small restaurant under financial pressure, especially one built around family recipes and regular customers, a negative review can carry more weight than a single disappointed meal. In Shady Palms, Winter’s words moved quickly from the newspaper and review sites into everyday conversation, turning a local business dispute into a community argument.
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h3>Restaurant History and Culture</h3>
+          <p>
+            Tita Rosie’s Kitchen is a family-run Filipino restaurant where food, memory, and hospitality are closely connected. The meal served to Winter’s table included adobo, longganisa, pandesal, suman, ginataang bilo-bilo, ube crinkle cookies, ube halaya, and vanilla ice cream.
+          </p>
+          <p>
+            Investigators are also reviewing allergy and ingredient details, including Edwin Long’s coconut allergy and the coconut-based ginataang bilo-bilo served during the meal.
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h3>Community Reaction</h3>
+          <p>
+            Community reaction has been divided between loyalty to the Macapagal family and concern over the suspicious timing of Winter’s collapse. Police are expected to release more information after witness interviews, hospital reports, and food evidence are reviewed.
+          </p>
+        </section>
+      </article>
+
+      <aside class="right-rail" aria-label="Story details">
+        <section class="fact-box">
+          <h3>Case Snapshot</h3>
+          <dl>
+            <div>
+              <dt>Victim</dt>
+              <dd>Derek Winter</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Tita Rosie’s Kitchen</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Suspected poisoning investigation</dd>
+            </div>
+            <div>
+              <dt>Key Figure</dt>
+              <dd>Lila Macapagal</dd>
+            </div>
+            <div>
+              <dt>Witness</dt>
+              <dd>Edwin Long</dd>
+            </div>
+            <div>
+              <dt>Context</dt>
+              <dd>Restaurant behind on rent</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="timeline">
+          <h3>Timeline</h3>
+          <ol>
+            <li><span>Before incident</span> Lila returns from Chicago to help her family’s struggling restaurant.</li>
+            <li><span>Before incident</span> Derek publishes repeated negative reviews of Tita Rosie’s Kitchen.</li>
+            <li><span>Day of incident</span> Derek arrives with Edwin Long, his stepfather and the restaurant’s landlord.</li>
+            <li><span>During meal</span> Witnesses notice Derek sweating, shaking, drinking heavily, and eating sweets despite being diabetic.</li>
+            <li><span>Collapse</span> Derek convulses after eating ginataang bilo-bilo and falls into the dessert bowl.</li>
+            <li><span>Later that evening</span> Long calls the restaurant to say Derek died at the hospital and police are on their way.</li>
+          </ol>
+        </section>
+      </aside>
+
+      <section class="comments" id="comments" aria-labelledby="comments-title">
+        <div class="comments-heading">
+          <div>
+            <p class="desk-label">Reader Forum</p>
+            <h2 id="comments-title">Local Comments</h2>
+          </div>
+          <button class="collapse-comments" type="button" aria-expanded="true">Hide Comments</button>
+        </div>
+
+        <div class="comment-list">
+          <article class="comment">
+            <h3>Maribel C.</h3>
+            <p>Tita Rosie and Lola Flor have been feeding people here forever. one mean review guy does not get to wipe all that away</p>
+          </article>
+          <article class="comment">
+            <h3>AnonymousNeighbor92</h3>
+            <p>not saying Lila did it but she was arguing with Derek right before he dropped and they were behind on rent. police should definitely ask questions</p>
+          </article>
+          <article class="comment">
+            <h3>Caleb from Maple Street</h3>
+            <p>Derek made a lot of enemies with those reviews, not just at this place. also he looked sick before anything even happened</p>
+          </article>
+          <article class="comment">
+            <h3>NinangWatcher</h3>
+            <p>the Calendar Crew saw the whole thing lol. if the cops want answers they should start with the aunties at that table</p>
+          </article>
+          <article class="comment">
+            <h3>PlazaRegular</h3>
+            <p>Mr. Long showing up with Derek while the restaurant was late on rent is weird. feels like this was never just about dinner</p>
+          </article>
+          <article class="comment">
+            <h3>UbeFan77</h3>
+            <p>Lila literally said the ube cookies had no coconut. people are acting like every dessert on that table is evidence now</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Shady Palms Gazette</p>
+      <p>Class project inspired by Arsenic and Adobo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

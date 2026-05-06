@@ -1,0 +1,423 @@
+:root {
+  --paper: #fbf8f1;
+  --ink: #202020;
+  --muted: #65615b;
+  --line: #d8cdbb;
+  --accent: #8c1d18;
+  --accent-dark: #511412;
+  --blue: #20445f;
+  --green: #51613f;
+  --panel: #fffaf0;
+  --shadow: rgba(32, 32, 32, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", Arial, sans-serif;
+  line-height: 1.55;
+}
+
+body.dark-theme {
+  --paper: #181816;
+  --ink: #f3ece0;
+  --muted: #bdb2a3;
+  --line: #4a4035;
+  --accent: #f06a5f;
+  --accent-dark: #ff9a91;
+  --panel: #24211d;
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  border-bottom: 3px solid var(--ink);
+  background: var(--panel);
+}
+
+.top-strip {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0.4rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.masthead {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.4rem 1rem 1.2rem;
+  text-align: center;
+}
+
+.kicker,
+.desk-label,
+.archive-label {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.masthead h1 {
+  margin: 0.1rem 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(2.3rem, 7vw, 5.4rem);
+  line-height: 1;
+}
+
+.tagline {
+  max-width: 680px;
+  margin: 0.55rem auto 0;
+  color: var(--muted);
+}
+
+.section-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.65rem 1rem;
+  border-top: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.section-nav a,
+.theme-toggle,
+.collapse-comments {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.45rem 0.7rem;
+  font: inherit;
+  font-size: 0.92rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-nav a:hover,
+.theme-toggle:hover,
+.collapse-comments:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.page-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 740px) minmax(240px, 320px);
+  gap: 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.story {
+  min-width: 0;
+}
+
+.story h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  line-height: 1.08;
+}
+
+.subheadline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.25rem;
+}
+
+.byline-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.4rem 0;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.byline,
+.date,
+.read-time {
+  margin: 0;
+}
+
+.date,
+.read-time {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.article-section {
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.byline-row + .article-section {
+  border-top: 0;
+}
+
+.article-section h3,
+.right-rail h3,
+.comments h2 {
+  margin: 0 0 0.6rem;
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+
+.article-section p {
+  margin: 0 0 0.8rem;
+  font-size: 1.08rem;
+}
+
+.placeholder-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.placeholder-list li {
+  margin: 0.35rem 0;
+}
+
+.review-sidebar,
+.fact-box,
+.timeline,
+.comments {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: 0 10px 24px var(--shadow);
+}
+
+.review-sidebar {
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.sidebar-header {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0.8rem;
+}
+
+.sidebar-header h3 {
+  margin: 0.15rem 0 0.7rem;
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+
+.review-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.review-tab {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  min-height: 38px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-tab.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fffaf0;
+}
+
+.review-panel {
+  border-left: 4px solid var(--accent);
+  padding-left: 0.9rem;
+}
+
+.stars {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+}
+
+blockquote {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.08rem;
+}
+
+.review-meta {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.right-rail {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.fact-box,
+.timeline {
+  padding: 1rem;
+}
+
+dl {
+  margin: 0;
+}
+
+dl div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
+}
+
+dt {
+  color: var(--muted);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+dd {
+  margin: 0;
+}
+
+.timeline ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.timeline li {
+  margin: 0.6rem 0;
+}
+
+.timeline span {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.comments {
+  grid-column: 1 / -1;
+  padding: 1rem;
+}
+
+.comments-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.8rem;
+}
+
+.comments-heading h2 {
+  margin-bottom: 0;
+}
+
+.comment-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.comment-list[hidden] {
+  display: none;
+}
+
+.comment {
+  min-height: 150px;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--panel) 82%, var(--paper));
+}
+
+.comment h3 {
+  margin: 0 0 0.4rem;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 3px solid var(--ink);
+  background: var(--panel);
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .top-strip,
+  .byline-row,
+  .comments-heading,
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .right-rail {
+    position: static;
+  }
+
+  .comment-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-nav {
+    flex-wrap: wrap;
+  }
+
+  .section-nav a,
+  .theme-toggle,
+  .collapse-comments {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .review-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  dl div {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
