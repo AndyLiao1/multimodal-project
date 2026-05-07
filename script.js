@@ -21,5 +21,8 @@ reviewTabs.forEach((tab) => {
 });
 
 themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
+  const isDark = document.body.classList.toggle("dark-theme");
+  themeToggle.textContent = isDark ? "☀" : "☾";
+  themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+  themeToggle.title = isDark ? "Switch to light mode" : "Switch to dark mode";
 });
